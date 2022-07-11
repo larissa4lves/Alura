@@ -1,0 +1,82 @@
+Lógica de programação: Crie programas com Javascript e HTML 
+01. Comece a programar hoje.
+PRIMEIRO CAPITULO 
+/*
+Tag <a>aqui</a> 
+Utilizaremos uma tag chamada âncora, representada pela letra "a".
+  O conteúdo dela será a palavra "aqui": <a>aqui</a> 
+______________________________________________________________________________________________________
+Pular linha <br>
+A ideia é que precisamos utilizar um comando especial, que o HTML tenha preparado, 
+para pular linhas, no caso o <br>:
+Trata-se de uma tag HTML, e todas têm esta característica de começar com o símbolo de 
+"menor" (<), o nome da tag - "br" é abreviação de break -, e fecha com o símbolo de "maior" (>). 
+Isto indica ao navegador que ele deve pular uma linha.
+__________________________________________________________________________________________________________
+Tag para descatar o texto <h1> e </h1>
+O HTML conta com a tag <h1>. O "h" se origina da palavra heading, ou seja, cabeçalho. 
+Significa que este é o primeiro título, ou título principal é algo que precisa ser destacado em uma página.
+___________________________________________________________________________________________________________
+Por meio do atributo href, indicaremos o endereço web <a href=""></a>
+___________________________________________________________________________________________________________
+<script></script> O elemento HTML é usado para incluir ou referenciar um script executável. 
+___________________________________________________________________________________________________________
+<meta charset="UTF-8">
+Para resolvermos o problema da acentuação, ao salvarmos o arquivo em nosso disco, o faremos com um conjunto de caracteres, 
+e o padrão é UTF-8. Sendo assim, utilizamos a tag desta maneira:<meta charset="UTF-8">
+__________________________________________________________________________________________________________________
+
+==========================
+
+02.Comunique-se com o usuario
+SEGUNDO CAPITULO 
+
+Na programação temos algo parecido, que é a convenção do código com o qual estamos trabalhando. Por exemplo, 
+há uma convenção de que as tags HTML devem ser escritas com letras minúsculas. Porém, se utilizarmos <H1> ela 
+funcionará perfeitamente.
+
+Salvaremos e retornaremos ao navegador, recarregaremos a página e veremos que não há erro, o código continua funcionando. 
+Entretanto, a convenção é utilizar letras minúsculas para as tags.
+
+Ou seja, ALERT não foi definido. O mundo JavaScript só está preparado para entender a sintaxe alert, em letras minúsculas. 
+Devemos ser mais cuidadosos no mundo JavaScript. Ao escrevermos em letras maiúsculas, estamos incorrendo em um erro de sintaxe. 
+É como o português, ao escrevermos uma palavra errada, estamos cometendo um erro de sintaxe.
+__________________________________________________________________________________________________________________________________
+ document.write();
+O que fazer? O mundo JavaScript é representado por tudo que está inserido na tag <script>. Todo o conteúdo desta tag é interpretado 
+pelo navegador como JavaScript. O mundo HTML é compreendido como tudo que está fora da tag <script>. O que faremos é escrever, a partir 
+do mundo JS, um HTML. Para isto, adicionaremos document.write():
+A palavra document significa, em português, "documento". Nossa página HTML, nosso programa, é um documento. Já a palavra write corresponde 
+à palavra "escrever". O write recebe parênteses ao final, ou seja, ele aceita receber algo para escrever no documento. Como vimos, o texto 
+no JavaScript é incluído entre aspas.
+__________________________________________________________________________________________________________________________________
+03.Torne seu programa dinamico com Variaveis
+TERCEIRO CAPITULO
+
+String ("")
+trings são úteis para guardar dados que podem ser representados em forma de texto.
+_____________________________________________________________________________________________________________________________________________________________
+Concatenação ("18" + "20"); 
+Quando temos uma operação de soma envolvendo texto, o JavaScript não entende se tratar de um número, e portanto realiza uma operação à qual damos 
+o nome de concatenação. Isto significa que ele juntou um texto ao outro, o que resultou em 1820. Este é então passado para o write, que o imprime desta forma.
+_______________________________________________________________________________________________________________________________________________________________
+UMA BOA PRATICA**** 
+Uma boa prática é terminar uma instrução com ponto e vírgula. Contudo, vimos que se comunicar com o usuário através de alertas pode ser algo tedioso e 
+por isso aprendemos uma nova instrução capaz de escrever a partir do mundo JavaScript no mundo HTML.
+________________________________________________________________________________________________________________________________________________________________
+Variaveis = var 
+
+As variáveis definidas no interior de uma função não podem ser acessadas de nenhum lugar fora da função, porque a variável está definida apenas no escopo da função.
+Declaramos uma variável que guarda um valor, no caso 2016. Para isso, utilizamos o prefixo var, abreviação de variable, em seguida nomeamos a variável como ano
+______________________________________________________________________________________________________________________________________________________________________
+Math.round  definiremos qual valor será arredondado.
+______________________________________________________________________________________________________________________________________________________________________ 
+04. Crie suas proprias funcionalidades
+QUARTO CAPITULO
+
+function pulaLinha();
+Sempre que quisermos pular uma linha, mesmo declarando a variável puloLinha, usaremos document.write(puloLinha). Isso é melhor em relação ao modelo anterior pois 
+puloLinha pode guardar um pulo com várias linhas.
+
+<!-- -->
+*/
