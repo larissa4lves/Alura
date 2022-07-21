@@ -1,0 +1,171 @@
+javaScript 
+
+1 Capitulo
+
+<meta charset="UTF-8">
+Estamos indicando ao navegador como deve ser a interpretação das cadeias de caracteres, ou seja, 
+do texto que está sendo exibido. Portanto, a simples adição desta tag resolverá o problema de acentuação!
+
+<h1></h1>
+ o H1 possui um destaque maior, uma fonte maior, e é geralmente o elemento de texto mais visível da página. 
+
+ <br> 
+ Pula linha 
+
+ <a> </a>
+ Para criar uma âncora HTML você deve adicionar uma tag <a> com o atributo name. O conteúdo deste atributo é a sua âncora. 
+ Para acessá-lo você deverá criar um link onde o atributo href estará preenchido com #nome-da-ancora.
+
+<a href="">aqui</a>
+Por meio do atributo href, indicaremos o endereço do link web
+
+alert("");
+O JavaScript nos permite exibir um pop-up na tela, que será de alerta. Precisaremos utilizar uma instrução da 
+linguagem indicando que um alerta deverá ser exibido
+
+<script></script>
+O elemento HTML é usado para incluir ou referenciar um script executável.
+_________________________________________________________________________________________________________________________________________
+
+2 Capitulo 
+
+document.write()
+A palavra document significa, em português, "documento". Nossa página HTML, nosso programa, é um documento. 
+Já a palavra write corresponde à palavra "escrever". O write recebe parênteses ao final, ou seja, ele aceita 
+receber algo para escrever no documento. Como vimos, o texto no JavaScript é incluído entre aspas.
+
+string
+O texto é chamado de string, tanto em JS como em outras linguagens de programação. Escreveremos a seguinte
+ mensagem: "A idade do Flávio é"' dentro das aspas é string.
+
+ *****CONCATENAÇÃO*****
+
+
+O JavaScript entenderá isso como um número, ou um texto? Ele interpretará como um texto, porque está entre 
+aspas. Faremos uma operação de adição, onde ambos os números serão colocados entre aspas:
+______________________
+<script>   
+    document.write("A idade do Flávio é ");
+    document.write("18" + "20");
+</script>
+______________________
+
+Cada número é interpretado como uma string, sendo assim, quando será a soma de "18" + "20"? Salvaremos o programa, 
+retornaremos à página e a recarregaremos. Temos o seguinte resultado:
+
+A idade do Flávio é 1820
+
+Quando temos uma operação de soma envolvendo texto, o JavaScript não entende se tratar de um número, e portanto 
+realiza uma operação à qual damos o nome de concatenação. Isto significa que ele juntou um texto ao outro, o que 
+resultou em 1820. Este é então passado para o write, que o imprime desta forma.
+
+Temos o comando document.write, e precisamos passar para ele o que desejamos imprimir. 
+Da forma como escrevemos, ele entenderá que queremos imprimir a concatenação do número 18 com 20. Portanto, 
+a primeira operação realizada pelo JavaScript é unir estes dois números para, em seguida, informar ao write 
+que ele deve imprimir.
+
+O que acontece se tirarmos as aspas em apenas um dos números?
+
+______________________
+document.write("18" + 20);
+______________________
+Estamos tentando somar um texto com um número. Uma string somada a outra resulta em uma concatenação, um número 
+somado a outro resulta na soma numérica dos dois, mas quando temos uma string a ser somada com um número, 
+se testarmos salvando e recarregando a página, teremos: A idade do Flávio é 1820
+Aconteceu que o JavaScript, ao receber um texto e um número, converte este último para texto, resultando em 1820. 
+Ou seja, quando há texto e número, ele converte tudo para texto.
+
+Linha 42 e 43 no exercicio de concatenação tem mais exemplos.
+texto acima é do alura!
+
+Uma boa prática é terminar uma instrução com ponto e vírgula;
+
+na hora de executar uma conta de matematica, não esquecer de colocar entre parênteses()!
+
+______________________
+<meta charset="UTF-8">
+<script>
+    document.write("Estou escrevendo do mundo JavaScript no mundo HTML");
+</script>
+______________________
+Observe a instrução document.write que recebe entre () o texto: "Estou escrevendo do mundo JavaScript no mundo HTML". 
+Quando usamos document.write, dentro de script, estamos, na verdade, escrevendo no mundo HTML, ou seja, o que veremos é um resultado HTML.
+Para quem está começando pode parecer estranho, visto que conseguimos fazer a mesma coisa escrevendo o texto 
+diretamente no mundo HTML como no exemplo abaixo:
+
+______________________
+<meta charset="UTF-8">
+Estou escrevendo do mundo JavaScript no mundo HTML
+<script>
+
+</script>
+____________________
+
+Lembre-se que tudo que estiver entre as TAG's <script> e </script> é considerado pelo navegador como código JavaScript e tudo que estiver 
+fora das TAG's, não importa em que lugar, é código HTML. Mais um exemplo:
+
+_____________________
+<meta charset="UTF-8">
+Estou escrevendo do mundo JavaScript no mundo HTML
+<script>
+
+</script>
+Aqui também é mundo HTML, porque esta fora da TAG script
+______________________
+
+A vantagem é que com document.write podemos passar o resultado de um cálculo entre outras coisas de maneira dinâmica já que o mundo HTML 
+não é capaz de realizar operações matemáticas.
+Desse modo, podemos fazer o seguinte:
+
+______________________
+<meta charset="UTF-8">
+<script>
+    document.write(10 + 20);
+</script>
+______________________
+
+Nesse caso, o document.write recebe dentro de () o resultado da operação que é 30. O que o document.write faz é alterar a página de 
+maneira a escrever o que quiser no mundo HTML. Isso que estamos escrevendo pode ser o resultado de uma lógica de programação mais complexa!
+Quer mais uma prova de que document.write pertence ao mundo JavaScript e consegue escrever no mundo HTML? Vejamos mais um exemplo:
+
+<meta charset="UTF-8">
+<script>
+    document.write("<h1>Seja bem-vindo</h1>");
+</script>
+
+Veja que estamos escrevendo do mundo JavaScript no mundo HTML o texto "<h1>Seja bem-vindo</h1>". Se isso faz parte do mundo HTML, o navegador 
+irá interpretar o código como HTML e colocará o texto em destaque pois usamos a TAG <h1>. O resultado é o mesmo que se tivéssemos escrito
+diretamente no mundo HTML:
+
+<meta charset="UTF-8">
+<h1>Seja bem-vindo</h1>
+<script>
+</script>
+
+Por fim, não podemos escrever no mundo HTML instruções JavaScript:
+<meta charset="UTF-8">
+document.write("Seja bem-vindo");
+<script>
+</script>
+
+O HTML não entende que deve exibir o texto passado pela instrução, ele imprime a instrução e não seu resultado! Sendo assim, fique atento sempre 
+que escrever seu código.
+
+texto acima é da alura!!!!!
+
+__________________________________________________________________________________________________________________________________________________________ 
+
+3 CAPITULO 
+
+Variaveis 
+
+Uma variável pode guardar praticamente o que você quiser: um número, uma string ou outro pedaço de código. Sabemos que é possível calcularmos 
+a média das idades usando a frase "A média das idades é" e concatenando com a soma das idades dividida pelo número de indivíduos.
+
+var variavel = variavel;
+_________________________________________________________________________________________________________________________________________
+
+
+
+
+
