@@ -165,7 +165,33 @@ a média das idades usando a frase "A média das idades é" e concatenando com a
 var variavel = variavel;
 _________________________________________________________________________________________________________________________________________
 
+Capitulo 4
 
 
+O resultado não será um número exato, e para arredondarmos, podemos utilizar
+Math.round()
+document.write(Math.round(3/4)); 
 
+Funções 
+Para declararmos uma função, utilizaremos o termo em inglês function, seguido de um nome, no caso, pulaLinha
+
+<script>EXEMPLO
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+        }
+//...
+</script>EXEMPLO
+
+oque é um escopo?
+
+Existe dois tipos de escopo: escopo local e o escopo global.
+
+O escopo define aone sua variavel 
+
+Lembre-se de colocar o código dentro da função, com um recuo sempre mais à direita e utilize o TAB do 
+seu teclado para criar esse recuo. Esse processo é conhecido como indentação do código (neologismo do inglês to indent). 
+É importante que a indentação esteja correta para facilitar a leitura do programa.
 
