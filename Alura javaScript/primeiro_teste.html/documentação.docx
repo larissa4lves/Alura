@@ -213,3 +213,61 @@ Qual das afirmações acima é verdadeira?
 
 R= D) A função prompt é a primeira forma que aprendemos para capturar a entrada do usuário.
 
+____________________
+
+    Como a função prompt sempre retorna o que digitamos no formato texto, ou seja, como um string, 
+    é uma boa prática sempre convertermos o valor digitado para número quando nossa intenção é ler um número. 
+    Vamos analisar esta instrução:
+
+     var convidados = parseInt(prompt("Número de convidados"));
+     A função prompt retorna o que digitamos como string e esse retorno é passado para parseInt. 
+     É esta função que recebe uma string e a converte para número. Agora, como temos dois números ligados, 
+     não acontecerá mais a concatenação, mas sim a soma.
+
+*****EXEMPLO*****
+ 
+  var a = parseInt("10");
+  var b = parseInt("Calopsita");
+  var c = parseInt(10);
+
+A variável `a` recebe o número 10 retornado por `parseInt`.
+
+A variável `b` recebe `NaN` (not a number) retornado por `parseInt`.
+
+A variável `c` recebe 10, número, retornado por `parseInt`.
+
+A variável a recebe o número 10 retornado por parseInt. Veja que a função esta recebendo a string "10". Ela converte a string em um número.
+
+A variável b recebe NaN (not a number) retornado por parseInt. Isso é verdade, porque parseInt está recebendo a string "Calopsita". É impossível converter esse texto para número, pois não há uma representação numérica para ele, como foi o caso de a.
+
+A variável c recebe 10, número, retornado por parseInt. Quando parseInt recebe um número e não uma string, ele devolve o mesmo número, ou seja, não realiza conversão alguma. Não dá erro, funciona.
+
+=========
+
+Sabemos que operações lógicas podem resultar em true (verdadeiro) ou false (falso). Sendo assim, temos as seguintes operações:
+
+a) 1 == 1
+b) 10 < 11
+c) 1 >= 1
+d) 2 <= 1
+e) 9 > 8
+
+a) true
+b) true
+c) true
+d) false
+e) true
+
+Vejamos cada operação:
+
+a) 1 == 1 é true, porque 1 é igual a 1.
+
+b) 10 < 11 é true, porque 10 é menor que 11.
+
+c) 1 >= 1 é true, porque 1 é maior ou igual a 1.
+
+d) 2 <= 1 é false, porque 2 não é menor ou igual a 1.
+
+e) 9 > 8 é true, porque 9 é maior que 8.
+
+</script>
