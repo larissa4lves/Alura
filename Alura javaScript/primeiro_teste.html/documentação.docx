@@ -195,3 +195,21 @@ Lembre-se de colocar o código dentro da função, com um recuo sempre mais à d
 seu teclado para criar esse recuo. Esse processo é conhecido como indentação do código (neologismo do inglês to indent). 
 É importante que a indentação esteja correta para facilitar a leitura do programa.
 
+_______________________________________________________________________________________________________________________________________
+ 
+ CAPITULO 5
+
+ Temos as seguintes afirmativas sobre a função prompt.
+
+A) Ela é uma função que recebe parâmetro e não possui retorno.
+
+B) Ela é uma função que não recebe parâmetro e possui retorno.
+
+C) Ela é uma função que nem recebe parâmetro e nem possui retorno.
+
+D) Ela é uma função que recebe parâmetro e possui retorno.
+
+Qual das afirmações acima é verdadeira?
+
+R= D) A função prompt é a primeira forma que aprendemos para capturar a entrada do usuário.
+
