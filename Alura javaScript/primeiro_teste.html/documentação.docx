@@ -25,7 +25,7 @@ linguagem indicando que um alerta deverá ser exibido
 
 <script></script>
 O elemento HTML é usado para incluir ou referenciar um script executável.
-_________________________________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 2 Capitulo 
 
@@ -153,7 +153,7 @@ que escrever seu código.
 
 texto acima é da alura!!!!!
 
-__________________________________________________________________________________________________________________________________________________________ 
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ 
 
 3 CAPITULO 
 
@@ -163,7 +163,7 @@ Uma variável pode guardar praticamente o que você quiser: um número, uma stri
 a média das idades usando a frase "A média das idades é" e concatenando com a soma das idades dividida pelo número de indivíduos.
 
 var variavel = variavel;
-_________________________________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Capitulo 4
 
@@ -195,7 +195,7 @@ Lembre-se de colocar o código dentro da função, com um recuo sempre mais à d
 seu teclado para criar esse recuo. Esse processo é conhecido como indentação do código (neologismo do inglês to indent). 
 É importante que a indentação esteja correta para facilitar a leitura do programa.
 
-_______________________________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
  
  CAPITULO 5
 
@@ -270,6 +270,9 @@ d) 2 <= 1 é false, porque 2 não é menor ou igual a 1.
 
 e) 9 > 8 é true, porque 9 é maior que 8.
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________  
+CAPITULO 6
+
+
 Aprendemos a utilizar parseInt() para converter um texto em número. Certo? Contudo, ele converte um texto para um número inteiro e nem sempre queremos abdicar dos números decimais.
  Vejamos um exemplo:
 
@@ -321,4 +324,33 @@ A palavra "input" vem do inglês, e sua tradução é "entrada". Em seguida, cri
 
 </script>
 
-</script>
+Aprendemos que é através de document.querySelector que buscamos um elemento (TAG) no mundo HTML e o trazemos para o mundo JavaScript. 
+No caso, é através da variável button, aquela que recebeu o retorno de document.querySelector que temos acesso à TAG <button>. Existem
+ outros termos técnicos para tudo o que aconteceu aqui, mas eles não nos ajudam com lógica de programação.
+
+Muito bem, agora que temos o botão, se quisermos que ele chame a função tchau quando for clicado, precisamos associar a função ao botão 
+atribuindo a função à button.onclick. Mas cuidado, você deve fazer:
+    button.onclick = tchau;
+ ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________   
+
+
+CAPITULO 9
+
+Como já sabíamos quais eram os itens do array, os declarávamos entre colchetes ([]) como fazíamos anteriormente. A partir de agora, como
+queremos que sejam números aleatórios.
+Tudo que é passado para o console.log() é visualizado apenas se o console do navegador for aberto. Salvaremos o programa e retornaremos 
+ao navegador para recarregarmos a página. Abriremos o console, onde veremos o array com os seguintes números:
+
+Array[5]
+0: 9
+1: 3
+2: 4
+3: 4
+4:10
+lenght: 5
+__proto__: Array[0]
+
+Se quisermos adicionar mais um item no array de frutas, o que devemos fazer?
+frutas.push("abacate");
+Todo array possui a função push que permite "empurrar" elementos para dentro da lista.
+_______________________________________________________________________________________________________________________________________
