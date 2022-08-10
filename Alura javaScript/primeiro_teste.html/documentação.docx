@@ -269,5 +269,56 @@ c) 1 >= 1 é true, porque 1 é maior ou igual a 1.
 d) 2 <= 1 é false, porque 2 não é menor ou igual a 1.
 
 e) 9 > 8 é true, porque 9 é maior que 8.
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________  
+Aprendemos a utilizar parseInt() para converter um texto em número. Certo? Contudo, ele converte um texto para um número inteiro e nem sempre queremos abdicar dos números decimais.
+ Vejamos um exemplo:
+
+var numero = parseInt("12.13");
+
+O valor de numero será 12. Para que as casas decimais sejam mantidas, usamos o parseFloat():
+var numero = parseFloat("12.13");
+
+O valor de numero será 12.13.
+
+Não é necessário usar o parseFloat() quando lemos os dados de peso e altura no cálculo do IMC, são como operações de divisão e multiplicação o JavaScript já realiza a conversão 
+implícita para nós. Contudo, é uma boa prática usar parseInt() ou parseFloat() se queremos ler números inteiros ou decimais fornecido pela função prompt. Nem sempre a conversão 
+implícita vai dar certo, como é o caso do número de vitórias e empates.
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+CAPITULO 7
+
+A primeira ferramenta de repetição que aprenderemos é chamada while, que recebe true:
+
+var anoCopa = 1930;
+
+while(true) {
+
+    alert("Teve copa em " + anoCopa);
+    anoCopa = anoCopa + 4;
+
+}
+
+alert("FIM");
+
+O while(true) indica que sempre será repetido o conteúdo do bloco dessa função. Se o while receber false, nada será repetido. Se salvarmos o programa, e recarregarmos a página, somente será exibido um alerta, com a mensagem FIM. A repetição não foi exibida.
+
+Se trocarmos o false por true, significa que, enquanto isso for verdadeiro, haverá repetição, portanto temos
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+CAPITULO 8
+
+Retornaremos ao navegador e abriremos nosso programa. Nosso objetivo é exibir, no canto superior esquerdo da tela, um campo de entrada para o usuário, acompanhado de um botão. Criaremos isto em HTML, quando utilizamos o <input/>, fazendo com que seja aberto um campo 
+para entrada de texto no navegador.
+A palavra "input" vem do inglês, e sua tradução é "entrada". Em seguida, criaremos um botão, e a palavra em inglês para isso é "button"
+
+<meta charset="UTF-8">
+
+<input/>
+
+<script>
+
+</script>
 
 </script>
