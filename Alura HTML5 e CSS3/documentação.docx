@@ -1,0 +1,99 @@
+CAPITULO 1  
+
+Marcação de texto 
+
+O HTML quer dizer “hyper text markup language”. Uma linguagem de marcação de texto.
+
+ Para marcarmos esse texto, precisamos usar o que são chamadas de “tags”. O formato de uma tag é um sinal de < um nome qualquer e um sinal de >. Isso é o que fecha uma tag. É o conteúdo que vamos ter para uma tag.
+
+ E que tags vamos usar neste texto? Por exemplo, na primeira linha temos um título. Vamos usar uma tag chamada “h”, de heading, que é o título do conteúdo.
+
+ Existem seis níveis de título. Para o primeiro título da página, vamos usar h1. Já na sequência, vamos ter o primeiro parágrafo de texto. O parágrafo de texto é marcado com a tag “p", de paragraph. Vamos fazer isso para o segundo e terceiro parágrafo também.
+
+Nós precisamos informar isso para o nosso navegador. Como precisamos marcar o conteúdo, eu marco o início e o final. Marquei o início do título com h1 e para marcar o final, além do sinal de <, preciso colocar uma barra. Assim ele fecha o conteúdo.
+
+Existe diferença entre as tags do HTML?
+R= Sim, cada tag tem uma responsabilidade e um significado
+Alternativa correta! As tags são semânticas e para cada uma delas temos um significado e um resultado diferente.
+
+
+TAG <strong></strong> 
+Essa tag que serve para marcar a importância de um conteúdo leva o nome “strong”. Em uma tradução, seria “forte”.
+
+TAG <em></em>
+Para usar a tag da ênfase usamos em. Essa tag vai começar no início do texto, dentro do nosso parágrafo, e vai terminar no final do texto, também dentro do parágrafo. Essa é uma tag que vai marcar todo o conteúdo e transformar a linha inteira em itálico.
+
+TAG <p> O parágrafo de texto é marcado com a tag “p", de paragraph.
+
+Para termos uma frase com este resultado final:
+
+Frase de exemplo
+
+Como deve ser a marcação do nosso HTML?
+
+<strong>Frase de <em>exemplo</em></strong>
+
+Alternativa correta! Fazemos uma marcação de destaque em toda a frase e uma marcação de ênfase na palavra exemplo.
+
+Nesta aula, aprendemos:
+
+Uma introdução ao HTML e às suas tags
+Como definir o título e os parágrafos de um texto
+Utilizando as tags <h1> e <p>, respectivamente
+Como dar destaque para algumas informações do texto, deixando-as em negrito, utilizando a tag <strong>
+Como dar ênfase para algumas informações do texto, deixando-as em itálico, utilizando a tag <em>
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+CAPITULO 2 
+
+TAG <!DOCTYPE html>
+Precisamos estruturar o nosso conteúdo e passar informações para o navegador, para que ele consiga transformar a nossa página e lê-la da forma correta. Para isso, precisamos falar de uma tag muito importante que vai na primeira linha do arquivo: a tag DOCTYPE.
+ Por padrão, escrevemos essa tag com o nome todo em maiúsculas. As outras tags do HTML não precisam seguir esse padrão, podem estar em minúscula ou maiúscula, mas, por padrão, escrevemos o nome dessa tag em maiúsculo para que o navegador e para que todos os desenvolvedores possam ler este padrão.
+ Essa tag tem alguns detalhes. O primeiro deles é que o primeiro caractere dentro dela tem uma exclamação. Essa exclamação serve para que essa tag seja identificada como DOCTYPE. E outra informação que colocamos é a versão do HTML que estamos usando. No caso, estamos usando a versão 5. Ela trouxe várias modificações e modernidades para o código. Uma delas é que não precisamos mais botar a versão 4.0, 3.0 ou 5.0. Se declararmos DOCTYPE html, estamos dizendo para o navegador que estamos usando a última versão disponível do HTML.
+
+TAG <html></html>
+O HTML ainda tem mais uma tag estrutural, que é a própria tag HTML. Ela é uma tag de conteúdo que serve para marcarmos tudo que é, dentro desta página, o HTML que vai ser renderizado no navegador.
+ Como essa tag é de conteúdo, ela precisa abrir na primeira linha, e na última linha, a última informação vai ser o fechamento dessa tag /html.
+ A tag do DOCTYPE não precisa ser fechada. Ela é uma tag de informação, não de conteúdo. E a tag HTML, por ser uma tag de conteúdo precisa marcar tudo que está dentro. Só que fica sempre muito difícil de ler o texto se ele estiver todo na linha da esquerda. Para isso, vamos usar a indentação e com o tab vamos jogar todo esse conteúdo para a frente.
+
+No último vídeo, conhecemos a tag DOCTYPE. Qual é a sua função?
+R= Passar informações para o navegador sobre qual versão do HTML estamos usando.
+Alternativa correta! A tag DOCTYPE serve para informar ao navegador qual versão do HTML estamos usando.
+
+TAG <meta charset=”UTF8”>
+Vamos quebrar essa tag passo a passo para entendermos. O nome da tag é meta, ela passa informações para o navegador. Dentro dela, reparem que diferente do h1, que é uma tag de conteúdo, colocamos uma propriedade dentro dela.
+Temos o atributo charset, que é o conjunto de caracteres, o characters set, que é o dicionário que estamos escolhendo. E escolhemos o dicionário UTF8. Ele tem as linguagens Unicode, ASCII, mas o mais importante que você deve saber é que ela tem todos os caracteres que são usados na maioria das línguas da Europa, da América Central, América do Norte, América do Sul. A maioria das linguagens com que trabalhamos no dia a dia.
+Com esses caracteres, vamos resolver o problema do acento. Ele tem ç, crase, acentuação de ~, qualquer uma que usamos na língua portuguesa.
+
+Dentro do HTML existe essa divisão estrutural. Como ela é feita?
+O HTML é dividido em duas partes. A primeira delas é o head, e a segunda é o body. Vamos pensar o seguinte, traduzindo os nomes: head é cabeça e body é corpo. Se pensarmos em um documento, a cabeça são as informações que estamos passando para o navegador e o corpo são as informações que queremos exibir na página.
+A tag meta é uma informação que quero passar para o navegador. Essa informação vai dentro do head. A tag title é uma informação que quero passar para dentro do navegador. Também vai dentro do head. E toda a informação que quero exibir, todo o texto que já criei vai ser jogado dentro do body.
+Reparem que para ficar correto o código, ele precisa ser bem indentado. É o que eu falei na aula sobre colocar o espaçamento correto na estrutura do navegador. Para isso, vou jogar os parágrafos para a frente.
+
+O conteúdo fica no body e informações no head
+Na estrutura correta do HTML, inserimos as informações que queremos passar para o navegador no head e as tags de conteúdo no body.
+
+Nesta aula, aprendemos:
+
+A definir a estrutura básica do HTML
+Com a tag DOCTYPE, definimos qual versão do HTML estamos utilizando
+A tag <html>, que marca o conteúdo a ser renderizado no navegador
+Dentro desta tag, podemos definir a linguagem da página, através da propriedade lang
+Como passar as informações do encoding da nossa página para o navegador, através da tag <meta> e da propriedade charset
+Como definir o título de uma página, através da tag <title>
+Como separar as informações que estão sendo passadas para o navegador, utilizando a tag <head>
+Como separar o conteúdo da página, utilizando a tag <body>
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ 
+
+CAPITULO 3
+
+
+Qual a forma correta de separarmos a propriedade e o seu valor no CSS?
+R= Usando o caractere : (text-align: center)
+O caractere : serve para atribuir um valor a uma propriedade.
+
+Ao nome do arquivo e sua extensão
+Geralmente, chamamos o arquivo que contem os estilos de style.css. Observe que este arquivo possui a extensão .css.
+
+Link do CSS no head
+Para utilizar a estilização do arquivo style.css no index.html, precisamos incluir no head o seguinte código:  <link rel="stylesheet" href="style.css">
