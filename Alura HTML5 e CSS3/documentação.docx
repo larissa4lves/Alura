@@ -1,5 +1,4 @@
-CAPITULO 1  
-
+CAPITULO 1 
 Marcação de texto 
 
 O HTML quer dizer “hyper text markup language”. Uma linguagem de marcação de texto.
@@ -97,3 +96,4 @@ Geralmente, chamamos o arquivo que contem os estilos de style.css. Observe que e
 
 Link do CSS no head
 Para utilizar a estilização do arquivo style.css no index.html, precisamos incluir no head o seguinte código:  <link rel="stylesheet" href="style.css">
+Para utilizar a estilização do arquivo style.css no index.html, precisamos incluir no head o seguinte código:  <link rel="stylesheet" href="style.css">Para utilizar a estilização do arquivo style.css no index.html, precisamos incluir no head o seguinte código:  <link rel="stylesheet" href="style.css">
